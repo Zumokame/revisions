@@ -17,6 +17,10 @@ h3 {
   width: 60%;
 }
 
+#main__ul--a {
+  font-size: 5rem;
+}
+
 #main {
   display: flex;
   flex-wrap: nowrap;

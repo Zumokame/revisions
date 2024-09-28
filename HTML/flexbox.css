@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  /* flex-direction: row; */
+  width: 93rem;
+  height: 93rem;
+  border: 10px solid red;
+  justify-content: space-around;
+}
+
+.container div {
+  height: 10rem;
+  width: 10rem;
+  border: solid 0.2rem blue;
+}
+
+.boxes {
+  text-align: center;
+}
+.Box1 {
+  background-color: green;
+}
+.Box2 {
+  background-color: yellow;
+}
+.Box3 {
+  background-color: orange;
+}
