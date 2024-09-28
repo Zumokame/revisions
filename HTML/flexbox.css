@@ -1,20 +1,22 @@
 .container {
   display: flex;
   /* flex-direction: row; */
+  flex-direction: column;
   width: 93rem;
   height: 93rem;
   border: 10px solid red;
   justify-content: space-around;
+  position: relative;
 }
-
-.container div {
+/********************************************/
+.boxes {
   height: 10rem;
   width: 10rem;
   border: solid 0.2rem blue;
-}
-
-.boxes {
   text-align: center;
+}
+/********************************************/
+.boxes1 {
 }
 .Box1 {
   background-color: green;
@@ -25,3 +27,19 @@
 .Box3 {
   background-color: orange;
 }
+/********************************************/
+.boxes2 {
+  position: relative;
+  right: -10rem;
+  top: -46.5rem;
+}
+.Box4 {
+  background-color: rgb(0, 255, 0);
+}
+.Box5 {
+  background-color: rgb(255, 255, 0);
+}
+.Box6 {
+  background-color: rgb(255, 166, 0);
+}
+/********************************************/
