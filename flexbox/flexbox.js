@@ -1,11 +1,11 @@
 const boxes1 = document.getElementById("boxes1");
 const flexDirection = document.getElementById("flexdirID");
-const containerBox = document.querySelector(".container");
+const contBox = document.querySelector(".container");
 
 if (boxes1.classList) {
   boxes1.classList.add("flex-direction_row");
   boxes1.classList.add("justify_content_baseline");
-  containerBox.classList.add("flex-direction_row");
+  contBox.classList.add("flex-direction_row");
 }
 
 flexDirection.addEventListener("change", flexDirChange);
@@ -14,11 +14,11 @@ function flexDirChange(event) {
   const flexDirSelect = event.target.id;
   console.log(flexDirSelect);
   boxes1.classList.remove("flex-direction_column", "flex-direction_row");
-  // containerBox.classList.remove("flex-direction_column", "flex-direction_row");
+  contBox.classList.remove("flex-direction_column", "flex-direction_row");
   boxes1.classList.add("flex-direction_" + flexDirSelect);
-  // containerBox.classList.add("flex-direction_" + flexDirSelect);
+  contBox.classList.add("flex-direction_" + flexDirSelect);
   console.log(boxes1.classList);
-  console.log(containerBox.classList);
+  console.log(contBox.classList);
 }
 
 const justifyContent = document.getElementById("jusContID");

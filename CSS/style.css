@@ -3,22 +3,19 @@
 }
 
 h1 {
-  font-weight: bold;
+  font-weight: arial, sans-serif;
   font-size: 2rem;
 }
 
 li {
   font-size: 2rem;
-}
-
-h3 {
+  border: solid 2px orange;
+  margin: 2rem;
+  padding: 10px;
+  background-color: orange;
+  border-radius: 10px;
+  list-style: none;
   text-align: center;
-}
-
-#container {
-  display: flex;
-  height: 50rem;
-  width: 60%;
 }
 
 #main {
@@ -26,7 +23,6 @@ h3 {
   flex-wrap: nowrap;
   align-items: stretch;
   background-color: #eee;
-  padding: 0.5rem;
 }
 
 nav {
@@ -35,30 +31,6 @@ nav {
   height: 50rem;
   width: 10rem;
   background-color: brown;
-}
-
-article {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: solid 1px black;
-  margin: 0.5rem;
-  width: 10rem;
-  height: 15rem;
-}
-
-article h2 {
-  margin: 0.5em;
-  text-align: center;
-  background-color: #5b5858;
-  color: #eee;
-}
-
-article footer {
-  margin: 0.5rem;
-  text-align: center;
-  color: #eee;
-  background-color: #5b5858;
 }
 
 ul {
