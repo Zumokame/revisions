@@ -5,14 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./flexbox.css" rel="stylesheet">
+    <script src="./flexbox.js" type="module"></script>
     <title>Flexbox</title>
 
 </head>
 
 <body>
     <h1>flexbox</h1><a href="../index.html">home</a>
+    <header>
+        <nav>
+            <form action="" method="post" id="flexdirID">
+
+                <h3>flex-direction</h3>
+
+                <input type="radio" id="column" name="flexdirection" checked="checked">
+                <label for="name">Column</label>
+                <input type="radio" id="row" name="flexdirection">
+                <label for="name">Row</label>
+            </form>
+
+            <form action="" method="post" id="jusContID">
+
+                <h3>justify-content</h3>
+
+
+                <input type="radio" id="baseline" name="justify-content" checked="true">
+                <label for baseline="name">Baseline</label>
+
+                <input type="radio" id="center" name="justify-content">
+                <label for center="name">Center</label>
+
+                <input type="radio" id="end" name="justify-content">
+                <label for end="name">End</label>
+
+                <input type="radio" id="flexend" name="justify-content">
+                <label for flex-end="name">flex-end</label>
+
+                <input type="radio" id="spacearound" name="justify-content">
+                <label for space-around="name">space-around</label>
+
+                <input type="radio" id="spacebetween" name="justify-content">
+                <label for space-around="name">space-between</label>
+            </form>
+
+            <form action="" method="post" id="flexFlowID">
+                <h3>flex-flow</h3>
+                <label for column="name">wrap</label>
+                <input type="radio" id="wrap" name="flex-flow">
+                <label for row="name">nowrap</label>
+                <input type="radio" id="nowrap" name="flex-flow">
+
+            </form>
+
+        </nav>
+    </header>
     <div class="container">
-        <div class="boxes1">
+        <div class="boxes1" id="boxes1">
             <div class="boxes Box1">
                 <p>Box1</p>
             </div>
