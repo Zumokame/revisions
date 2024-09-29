@@ -1,6 +1,7 @@
 .container {
   display: flex;
-  width: 93rem;
+  flex-direction: row;
+  width: 60rem;
   height: 60rem;
   border: 10px solid red;
 }
@@ -18,6 +19,7 @@ form {
 /********************************************/
 .boxes1 {
   display: flex;
+  justify-content: space-around;
 }
 .flex-direction_column {
   flex-direction: column;
@@ -40,7 +42,6 @@ form {
 .justify_content_spacearound {
   justify-content: space-around;
 }
-
 .justify_content_spacebetween {
   justify-content: space-between;
 }
@@ -50,10 +51,10 @@ form {
   background-color: green;
 }
 .Box2 {
-  background-color: rgb(224, 189, 10);
+  background-color: yellow;
 }
 .Box3 {
-  background-color: rgb(235, 102, 8);
+  background-color: red;
 }
 /********************************************/
 .boxes2 {

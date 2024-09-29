@@ -16,7 +16,6 @@ justifyContent.addEventListener("change", jusContChange);
 
 function jusContChange(event) {
   const justContSelect = event.target.id;
-
   boxes1.classList.remove(
     "justify_content_baseline",
     "justify_content_center",
@@ -25,7 +24,6 @@ function jusContChange(event) {
     "justify_content_spacearound",
     "justify_content_spacebetween"
   );
-
   boxes1.classList.add("justify_content_" + event.target.id);
   console.log(boxes1.classList);
 }
