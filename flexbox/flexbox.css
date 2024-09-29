@@ -1,9 +1,8 @@
 .container {
   display: flex;
-  flex-direction: row;
-  width: 60rem;
-  height: 60rem;
-  border: 10px solid red;
+  width: 30rem;
+  height: 30rem;
+  border: 4px solid red;
 }
 
 form {
@@ -11,15 +10,14 @@ form {
 }
 /********************************************/
 .boxes {
-  height: 10rem;
-  width: 10rem;
-  border: solid 0.2rem blue;
+  height: 3rem;
+  width: 3rem;
+  border: solid 0.1rem blue;
   text-align: center;
 }
 /********************************************/
 .boxes1 {
   display: flex;
-  justify-content: space-around;
 }
 .flex-direction_column {
   flex-direction: column;
@@ -56,20 +54,13 @@ form {
 .Box3 {
   background-color: red;
 }
-/********************************************/
-.boxes2 {
-  display: flex;
-  flex-flow: column;
-  display: none;
-  /* justify-content: flex-end; */
-}
 .Box4 {
-  background-color: rgb(0, 255, 0);
+  background-color: brown;
 }
 .Box5 {
-  background-color: rgb(255, 255, 0);
+  background-color: purple;
 }
 .Box6 {
-  background-color: rgb(255, 166, 0);
+  background-color: orange;
 }
 /********************************************/
