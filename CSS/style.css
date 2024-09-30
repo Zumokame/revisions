@@ -18,6 +18,10 @@ li {
   text-align: center;
 }
 
+a {
+  color: rgb(0, 37, 198);
+}
+
 #main {
   display: flex;
   flex-wrap: nowrap;
