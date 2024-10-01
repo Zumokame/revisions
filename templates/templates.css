@@ -1,0 +1,12 @@
+* {
+  border: solid 6cap red;
+  padding: 1rem;
+}
+
+* > * {
+  border: solid 4px blue;
+}
+
+* > * > * {
+  border: solid 2px green;
+}
