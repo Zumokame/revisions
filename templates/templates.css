@@ -5,8 +5,10 @@
 
 * > * {
   border: solid 4px blue;
+  padding: 1rem;
 }
 
 * > * > * {
   border: solid 2px green;
+  padding: 1rem;
 }
