@@ -21,6 +21,7 @@ li:hover {
   transform: scale(1.3);
   background-color: blue;
   border: solid 2px blue;
+  color: orange;
 }
 a:hover {
   color: orange;

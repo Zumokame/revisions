@@ -1,0 +1,79 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  width: 20rem;
+  height: 20rem;
+  padding: auto;
+  border: solid 1rem green;
+  background-color: rgb(46, 204, 88);
+}
+.container div {
+  text-align: center; /* centrer le text dans la box */
+  justify-self: center; /* alignement en largeur */
+  align-self: center; /* alignement en hauteur*/
+  width: 4rem;
+  height: 4rem;
+  border: solid 1px black;
+}
+.box01 {
+  background-color: blue;
+}
+.box02 {
+  background-color: yellow;
+}
+.box03 {
+  background-color: green;
+}
+.box04 {
+  background-color: red;
+}
+.box05 {
+  background-color: pink;
+}
+.box06 {
+  background-color: orange;
+}
+.box07 {
+  background-color: purple;
+}
+.box08 {
+  background-color: grey;
+}
+.box09 {
+  background-color: brown;
+}
+
+.divIcone {
+  display: flex;
+  justify-content: center;
+
+  width: 90px;
+  height: 90px;
+  border: solid 5px red;
+  border-radius: 10px;
+}
+
+.icone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icone img {
+  border-radius: 10px;
+}
+
+.icone:hover {
+  transform: scale(1.5);
+}
+
+img {
+  width: 75%;
+}
+
+.container > div:hover {
+  align-self: center;
+  justify-self: center;
+  transform: scale(1.5);
+}
