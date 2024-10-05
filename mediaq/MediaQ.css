@@ -1,0 +1,104 @@
+.navigation__ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #04ff00;
+}
+
+.navigation__ul--a {
+  display: flex;
+  border: solid 4px #ffb301;
+  background-color: #ffff00;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.navigation__ul--a:hover {
+  border: solid 4px #ff0000;
+}
+
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  min-width: 660;
+  border: solid 2px #ff0000;
+  background-color: #00a6ff;
+  height: 100vh;
+}
+
+.main__article--section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #a9eea0;
+  width: 61.2rem;
+  height: 61.2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.footer {
+  border: solid 4px #0008ff;
+  background-color: #898dff;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+/***************************/
+/*** media query quand inferieur a 1000PX ****/
+/***************************/
+
+/***************************/
+/*** media query quand inferieur a 660PX ****/
+/***************************/
+
+.boxes {
+  width: 20rem;
+  height: 20rem;
+  border: dotted 4px rgb(255, 0, 0);
+}
+.box01 {
+  background-color: blue;
+}
+.box02 {
+  background-color: rgb(255, 255, 0);
+}
+.box03 {
+  background-color: green;
+}
+.box04 {
+  background-color: red;
+}
+.box05 {
+  background-color: pink;
+}
+.box06 {
+  background-color: orange;
+}
+.box07 {
+  background-color: purple;
+}
+.box08 {
+  background-color: grey;
+}
+.box09 {
+  background-color: brown;
+}
+
+.aside {
+  background-color: rgba(255, 0, 179, 0.495);
+  border: solid 4px #ff00b3;
+}

@@ -22,6 +22,29 @@
   border: solid 4px #0008ff;
 }
 
+.navigation {
+}
+
+.navigation__ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #04ff00;
+}
+
+.navigation__ul--a {
+  display: flex;
+  border: solid 4px #ffb301;
+  background-color: #ffff00;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.navigation__ul--a:hover {
+  border: solid 4px #ff0000;
+}
+
 h1 {
   font-size: 3rem;
   font-weight: bold;
@@ -62,6 +85,11 @@ h2 {
 
 #lescolumns .box05 {
   display: none;
+}
+
+#lescolumns .box06 {
+  grid-column: 3/4;
+  grid-row: 3/4;
 }
 
 #lescolumns {
