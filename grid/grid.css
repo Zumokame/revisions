@@ -1,4 +1,15 @@
-.container {
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px 5px;
+  min-width: 660;
+
+  border: solid 2px #ff0000;
+  background-color: #cacaca;
+}
+
+.main__article--section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -8,20 +19,117 @@
   padding: auto;
   border: solid 1rem green;
   background-color: rgb(232, 232, 232);
+  border: solid 4px #0008ff;
 }
-.container div {
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+/***************************/
+/*** Les GRID en row *******/
+/***************************/
+
+/* #lesrows .boxes {
+  border: dotted 4px rgb(21, 255, 0);
+}
+
+#lesrows .box01 {
+  background-color: #fbff00;
+  grid-column: 1/3;
+}
+
+#lesrows .box02 {
+  display: none;
+}
+
+#lesrows .box04 {
+  grid-column: 2/4;
+  grid-row: 2/4;
+} */
+
+/***************************/
+/*** Les GRID en column*****/
+/***************************/
+
+#lescolumns .box05 {
+  display: none;
+}
+
+#lescolumns {
+  /* text-align: center; centrer le text dans la box */
+  /* justify-self: center; alignement en largeur */
+  align-self: center;
+}
+
+.footer {
+  border: solid 4px #0008ff;
+  background-color: #898dff;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+/***************************/
+/*** media query quand inferieur a 1000PX ****/
+/***************************/
+
+@media screen and (max-width: 1000px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px 5px;
+    border: solid 2px #04ff00;
+    background-color: #eea0a0;
+  }
+
+  #lescolumns .box05 {
+    display: flex;
+  }
+}
+
+/***************************/
+/*** media query quand inferieur a 660PX ****/
+/***************************/
+
+@media screen and (max-width: 660px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    grid-gap: 5px 5px;
+    border: solid 2px #04ff00;
+    background-color: #eea0a0;
+  }
+
+  #lescolumns .box05 {
+    display: flex;
+  }
+}
+
+.boxes {
   text-align: center; /* centrer le text dans la box */
-  justify-self: center; /* alignement en largeur */
-  align-self: center; /* alignement en hauteur*/
-  width: 4rem;
-  height: 4rem;
-  border: solid 1px black;
+  justify-self: center; /*alignement en largeur */
+  align-self: center; /*alignement sur la hauteur */
+
+  width: 100%;
+  height: 100%;
+  border: dotted 4px rgb(255, 0, 0);
 }
 .box01 {
   background-color: blue;
 }
 .box02 {
-  background-color: yellow;
+  background-color: rgb(255, 255, 0);
 }
 .box03 {
   background-color: green;
@@ -43,4 +151,9 @@
 }
 .box09 {
   background-color: brown;
+}
+
+.aside {
+  background-color: rgba(255, 0, 179, 0.495);
+  border: solid 4px #ff00b3;
 }
