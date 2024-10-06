@@ -101,4 +101,5 @@ h2 {
 .aside {
   background-color: rgba(255, 0, 179, 0.495);
   border: solid 4px #ff00b3;
+  width: 100%;
 }
