@@ -1,42 +1,59 @@
-.container {
-  display: flex;
-  /* flex-direction: row; */
-  flex-direction: column;
-  width: 93rem;
-  height: 93rem;
-  border: 10px solid red;
-  justify-content: space-around;
-  position: relative;
+html {
+  box-sizing: border-box;
+  color: rgb(255, 0, 255);
 }
-/********************************************/
-.boxes {
-  height: 10rem;
-  width: 10rem;
-  border: solid 0.2rem blue;
+
+.container {
+  border: solid 4px rgb(255, 0, 0);
+  background-color: rgb(142, 71, 71);
+  margin: auto 0% auto 0%;
+  margin: 10px;
+  width: 385px;
+}
+
+/* 1er niveau de balise */
+
+.page-header,
+.page-main,
+.page-aside,
+.page-footer {
+  border: solid 4px rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  margin: 10px;
+}
+
+/* 2ieme niveau de balise */
+
+.main__section {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: solid 4px rgb(0, 0, 255);
+  background-color: rgb(0, 0, 255);
+}
+
+/* 3ieme niveau de balise */
+
+.section__article {
+  display: flex;
+  flex-direction: column;
+  border: solid 4px rgb(0, 0, 0);
+  margin: auto 5px auto 5px;
+  background-color: rgb(0, 255, 0);
+  width: 365px;
+}
+
+.section__article--titre {
   text-align: center;
 }
-/********************************************/
-.boxes1 {
+.container {
 }
-.Box1 {
-  background-color: green;
+
+/* article--modif */
+
+.section__article {
+  text-align: center;
 }
-.Box2 {
-  background-color: yellow;
+
+.page-header {
+  text-align: center;
 }
-.Box3 {
-  background-color: orange;
-}
-/********************************************/
-.boxes2 {
-}
-.Box4 {
-  background-color: rgb(0, 255, 0);
-}
-.Box5 {
-  background-color: rgb(255, 255, 0);
-}
-.Box6 {
-  background-color: rgb(255, 166, 0);
-}
-/********************************************/
